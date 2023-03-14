@@ -1,0 +1,149 @@
+header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 25px;
+  }
+  @media(max-width:760px){
+    header {
+      justify-content: space-between;
+   }
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .menu ul {
+     display: flex;
+     justify-content: center;
+     gap: 70px;
+  }
+  @media(max-width:1000px){
+    .menu ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+   }
+  }
+  .menu li {
+    list-style: none;
+  }
+  .menu li a {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .menu li a:hover{
+    color: black;
+  }
+  .menu li a:active{
+    color: black;
+  }
+  
+  .line {
+    height: 0.5px;
+    background-color: rgb(190, 190, 190);
+    max-width: 700px;
+  }
+  .logo {
+    max-width: 300px;
+  }
+ 
+  
+  .logo h1{
+    color: white;
+    font-weight: bold;
+  }
+  .logo p {
+    color: rgb(166, 166, 166);
+  }
+  .burger{
+    display: none;
+    position:relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    z-index: 50;
+    margin-right: 20px;
+  }
+  .burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: white;
+  }
+  .burger:before, .burger:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease 0s; 
+  }
+  .burger:before{
+    top: 0;
+  }
+  .burger:after{
+    bottom: 0;
+  }
+  .burger.active span {
+    transform: scale(0);
+  }
+   .burger.active:before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0,-50%);
+   }
+   .burger.active:after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0,50%);
+   }
+   @media(max-width:760px){
+    header{
+      margin-top: 0;
+    }
+    .burger {
+      display: flex;
+   }
+   .logo {
+    max-width: 500px;
+  }
+   .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 65px 20px;
+    background-color: black;
+    animation: burgerAnimation 0.7s;
+ }
+ .menu .line {
+  display: none;
+ }
+ .menu ul {
+ flex-direction: column;
+ }
+ .menu ul li a{
+  font-size: 20px;
+ }
+ .menu ul li a:hover {
+   color: red;
+  }
+ .menu.active {
+  display: flex;
+ }
+  }
+  @keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  @media(max-width:650px){
+    .logo {
+      max-width: 250px;
+    }
+  }

@@ -1,0 +1,35 @@
+main{
+   flex-grow: 1;
+    margin-right: 10px;
+  }
+  .homeContent{
+    margin-top: 60px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .homeInfo h1 {
+    font-size: 30px;
+  }
+  .homeInfo div {
+    height: 0.5px;
+    background-color: rgb(190, 190, 190);
+    max-width: 700px;
+  }
+  @media(max-width:760px){
+    .homeContent{
+     flex-direction: column;
+    }
+    .homeInfo p {
+      text-align: justify;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }

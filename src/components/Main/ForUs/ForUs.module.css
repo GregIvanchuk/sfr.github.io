@@ -1,0 +1,26 @@
+.homeInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.head{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    height: 0.5px;
+    background-color:rgb(141, 141, 141) ;
+    max-width: 1000px;
+}
+.paragraphs{
+    text-align: justify;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.paragraph h3 {
+    margin-bottom: 7px;
+}

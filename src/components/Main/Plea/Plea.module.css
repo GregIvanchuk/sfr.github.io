@@ -1,0 +1,71 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drawer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-top: 30px;
+}
+ .h1{
+    color:white;
+    margin-top: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form select {
+    margin-top: 30px;
+    color: grey ;
+    font-size: 20px;
+    max-width: 100%;
+    height: 40px;
+}
+.form select option {
+    color: grey ;
+    font-size: 20px;
+}
+.form form {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+form input {
+    width: 300px;
+    height: 35px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+}
+button{
+    height: 50px;
+    width: 300px;
+    font-size: 17px;
+    color: white;
+    background-color:rgb(167, 4, 4);
+    border:none;
+}
+button:hover{
+    background-color: red;
+}
+
+@media (max-width:350px){
+    button{
+       width: 280px;
+    }
+}

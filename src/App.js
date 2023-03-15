@@ -6,8 +6,7 @@ function App() {
      <div className={styles.container}>
     <Main/>
   <Footer/>
-
-     </div>
+   </div>
   );
 }
 

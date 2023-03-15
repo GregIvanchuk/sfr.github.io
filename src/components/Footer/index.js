@@ -1,7 +1,7 @@
 import styles from './Footer.module.css';
 function Footer() {
   return (
-    <footer>
+     <footer>
         <div className={styles.info}> 
         <div className={styles.location}>
         <div className={styles.locationInfo}>
@@ -27,7 +27,7 @@ function Footer() {
         <div className={styles.autor}>
           <p>© 2035 by Business Solutions. Powered and secured by Gregoriy Ivanchuk</p>
         </div>
-      </footer>
+     </footer>
   );
 }
 

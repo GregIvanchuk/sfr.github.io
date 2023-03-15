@@ -33,11 +33,15 @@ footer {
   }
   @media (max-width:505px) {
     .info {
-      gap:25px;
+      gap:20px;
     }
-  }
-  @media (max-width:450px) {
-    .info {
-     display: none;
+    .locationInfo h3 {
+      font-size: 13px;
+    }
+    .locationInfo p {
+      font-size: 10px;
+    }
+    .autor p {
+      font-size: 8px;
     }
   }

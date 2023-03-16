@@ -3,7 +3,7 @@ import ForUs from './ForUs';
 import Home from './Home';
 import styles from './Main.module.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Plea from './Plea';
+import Plea from './ContactForm';
 import Header from './Header';
 function Main() {
   return (

@@ -6,7 +6,7 @@ function Plea() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    const sendinblueApiKey ='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';
+    const sendinblueApiKey ='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';
     axios({
       method: 'post',
       url: 'https://api.sendinblue.com/v3/smtp/email',
@@ -16,7 +16,7 @@ function Plea() {
       },
       data: {
         sender: { name: data.name, email: data.email },
-        to: [{ email: 'gregiv99@gmail.com' }],
+        to: [{ email:'gregiv99@gmail.com'}],
         subject: data.category,
         htmlContent: `Місто:${data.city}
         <br>Номер телефону: ${data.phone}
@@ -48,27 +48,27 @@ function Plea() {
     <option value="Потрібен психолог">Потрібен психолог</option>
     <option value="Шукаю школу для дітей">Шукаю школу для дітей</option>
   </select>
-  {errors.category && <span>This field is required</span>}
+  {errors.category && <span style={{color:"red"}}>поле повинне бути заповнено</span>}
 </div>
       <div className={styles.item}>
         <label htmlFor="name"></label>
         <input placeholder=" прізвище та ініціали" type="text" id="name" {...register('name', { required: true })} />
-        {errors.name && <span>This field is required</span>}
+        {errors.name && <span style={{color:"red"}} >поле повинне бути заповнено</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="email"></label>
         <input placeholder=" електронна адреса" type="email" id="email" {...register('email', { required: true })} />
-        {errors.email && <span>This field is required</span>}
+        {errors.email && <span style={{color:"red"}} >поле повинне бути заповнено</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="phone"></label>
         <input placeholder=" номер телефону" type="phone" id="phone" {...register('phone', { required: true })} />
-        {errors.phone && <span>This field is required</span>}
+        {errors.phone && <span style={{color:"red"}} >поле повинне бути заповнено</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="city"></label>
         <input placeholder=" місто" type="city" id="city" {...register('city', { required: true })} />
-        {errors.city && <span>This field is required</span>}
+        {errors.city && <span style={{color:"red"}} >поле повинне бути заповнено</span>}
       </div>
       <button type="submit">Send</button>
     </form>

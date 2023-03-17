@@ -7,7 +7,6 @@ function Plea() {
 
   const onSubmit = (data) => {
     const sendinblueApiKey = process.env.REACT_APP_API_KEY;
-    console.log(sendinblueApiKey);
     axios({
       method: 'post',
       url: 'https://api.sendinblue.com/v3/smtp/email',

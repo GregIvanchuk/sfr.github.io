@@ -6,7 +6,7 @@ function Plea() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    const sendinblueApiKey ='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';
+    const sendinblueApiKey ='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';
     axios({
       method: 'post',
       url: 'https://api.sendinblue.com/v3/smtp/email',

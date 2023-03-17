@@ -18,13 +18,19 @@ form {
     margin-left:20px;
     margin-right:20px;
 }
-.item select,.item select option{
+.option1{
+    color:grey;
+}
+.item select,.option{
     width:407px;
     height:40px;
     color:red;
     font-size:17px;
     background-color:white;
     border:2px red solid;
+}
+.item select:first-child{
+    color:grey;
 }
 .item label{
     color:grey;

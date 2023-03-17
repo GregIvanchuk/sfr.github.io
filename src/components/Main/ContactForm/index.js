@@ -6,7 +6,8 @@ function Plea() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    const sendinblueApiKey = process.env.SENDINBLUE_API_KEY;
+    const sendinblueApiKey = process.env.REACT_APP_API_KEY;
+    console.log(sendinblueApiKey);
     axios({
       method: 'post',
       url: 'https://api.sendinblue.com/v3/smtp/email',
@@ -41,12 +42,12 @@ function Plea() {
       <div className={styles.item}>
   <label htmlFor="category"></label>
   <select id="category" {...register('category', { required: true })}>
-    <option value="">Виберіть необхідну вам послугу</option>
-    <option value="Шукаю житло">Шукаю житло</option>
-    <option value="Потрібна їжа">Потрібна їжа</option>
-    <option value="Потрібно оформити документи">Потрібно оформити документи</option>
-    <option value="Потрібен психолог">Потрібен психолог</option>
-    <option value="Шукаю школу для дітей">Шукаю школу для дітей</option>
+    <option className={styles.option1} value="">Виберіть необхідну вам послугу</option>
+    <option className={styles.option} value="Шукаю житло">Шукаю житло</option>
+    <option className={styles.option} value="Потрібна їжа">Потрібна їжа</option>
+    <option className={styles.option} value="Потрібно оформити документи">Потрібно оформити документи</option>
+    <option className={styles.option} value="Потрібен психолог">Потрібен психолог</option>
+    <option className={styles.option} value="Шукаю школу для дітей">Шукаю школу для дітей</option>
   </select>
   {errors.category && <span style={{color:"red"}}>поле повинне бути заповнено</span>}
 </div>

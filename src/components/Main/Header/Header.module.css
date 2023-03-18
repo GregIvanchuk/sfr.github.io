@@ -17,13 +17,26 @@ header{
   .menu ul {
      display: flex;
      justify-content: center;
-     gap: 70px;
+     gap: 100px;
   }
   @media(max-width:1000px){
     .menu ul {
-      display: flex;
-      justify-content: center;
+      gap: 70px;
+    }
+   }
+   @media(max-width:915px){
+    .menu ul {
       gap: 50px;
+    }
+   }
+   @media(max-width:855px){
+    .menu ul {
+      gap: 20px;
+   }
+  }
+   @media(max-width:765px){
+    .menu ul {
+      gap: 15px;
    }
   }
   .menu li {

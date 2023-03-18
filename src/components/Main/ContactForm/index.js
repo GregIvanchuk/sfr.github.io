@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import styles from './Plea.module.css';
 function Plea() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset , formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
     const sendinblueApiKey = process.env.REACT_APP_API_KEY;
@@ -25,12 +25,11 @@ function Plea() {
       },
     })
       .then(function (response) {
-        console.log(response);
-        alert('Your message was sent successfully!');
+        reset();
+        alert('Ваша заявка успішно відправлена!');
       })
       .catch(function (error) {
-        console.log(error);
-        alert('An error occurred while sending your message. Please try again later.');
+        alert('Під час відправлення вашої заявки сталася помилка. Будь ласка спробуйте пізніше.');
       });
   };
 

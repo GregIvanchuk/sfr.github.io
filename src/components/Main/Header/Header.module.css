@@ -119,13 +119,13 @@ header{
     width: 100%;
     z-index: 50;
     overflow-y: auto;
-    padding: 65px 20px;
+    padding: 35px 20px;
     background-color: black;
     animation: burgerAnimation 0.7s;
  }
  .menu_l{
   display:flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap:10px
 }
 .menu_l select{
@@ -142,7 +142,7 @@ header{
   font-size: 20px;
  }
  .menu ul li a:hover {
-   color: red;
+   color: rgb(10, 45, 69);
   }
  .menu.active {
   display: flex;
@@ -153,6 +153,7 @@ header{
   color:white; 
   font-size: 19px;
   background-color: rgb(10, 45, 69);
+  border:none;
 }
   }
   @keyframes burgerAnimation {

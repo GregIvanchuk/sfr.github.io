@@ -4,40 +4,28 @@ header{
     height: 100px;
     margin-top: 25px;
   }
-  @media(max-width:760px){
-    header {
-      justify-content: space-between;
-   }
-  }
   .menu {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
+  }
+  .menu_l{
+    display:flex;
+    gap:10px
+  }
+  .menu select {
+    width:40px;
+    color:white; 
+    background-color: rgb(10, 45, 69);
+  }
+  .menu option {
+    color:white;
   }
   .menu ul {
      display: flex;
      justify-content: center;
-     gap: 100px;
-  }
-  @media(max-width:1000px){
-    .menu ul {
-      gap: 70px;
-    }
-   }
-   @media(max-width:915px){
-    .menu ul {
-      gap: 50px;
-    }
-   }
-   @media(max-width:855px){
-    .menu ul {
-      gap: 20px;
-   }
-  }
-   @media(max-width:765px){
-    .menu ul {
-      gap: 15px;
-   }
+     gap: 65px;
+     padding-left: 10px;
   }
   .menu li {
     list-style: none;
@@ -56,7 +44,7 @@ header{
   .line {
     height: 0.5px;
     background-color: rgb(190, 190, 190);
-    max-width: 700px;
+    width: 700px;
   }
   .logo {
     max-width: 300px;
@@ -110,9 +98,10 @@ header{
     bottom: 50%;
     transform: rotate(45deg) translate(0,50%);
    }
-   @media(max-width:760px){
+   @media(max-width:1000px){
     header{
       margin-top: 0;
+      justify-content: space-between;
     }
     .burger {
       display: flex;
@@ -134,11 +123,20 @@ header{
     background-color: black;
     animation: burgerAnimation 0.7s;
  }
+ .menu_l{
+  display:flex;
+  flex-direction: column;
+  gap:10px
+}
+.menu_l select{
+  margin-left:10px
+}
  .menu .line {
   display: none;
  }
  .menu ul {
  flex-direction: column;
+ gap:10px
  }
  .menu ul li a{
   font-size: 20px;
@@ -149,6 +147,13 @@ header{
  .menu.active {
   display: flex;
  }
+ .menu select {
+  width:120px;
+  height: 30px;
+  color:white; 
+  font-size: 19px;
+  background-color: rgb(10, 45, 69);
+}
   }
   @keyframes burgerAnimation {
     from {opacity: 0}

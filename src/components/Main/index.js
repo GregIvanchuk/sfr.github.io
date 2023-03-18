@@ -12,8 +12,8 @@ function Main() {
         <Header/>
     <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/forus" element={<ForUs/>}/>
-        <Route exact path="/plea" element={<Plea/>}/>
+        <Route exact path="/about" element={<ForUs/>}/>
+        <Route exact path="//apply" element={<Plea/>}/>
         <Route exact path="/contact" element={<Contact/>}/>
         {/* <Route exact path="/framed" element={<FramedCart/>}/> */}
       </Routes>

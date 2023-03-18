@@ -24,10 +24,10 @@ form {
 .item select,.option{
     width:407px;
     height:40px;
-    color:red;
+    color:rgb(10, 45, 69);
     font-size:17px;
     background-color:white;
-    border:2px red solid;
+    border:2px rgb(10, 45, 69) solid;
 }
 .item select:first-child{
     color:grey;
@@ -41,7 +41,7 @@ form {
     color:black;
     font-size:17px;
     background-color:white;
-    border:2px red solid;
+    border:2px rgb(10, 45, 69) solid;
 }
 @media(max-width:520px){
     /* .item select,.item select option{
@@ -83,11 +83,11 @@ button{
     width: 300px;
     font-size: 17px;
     color: white;
-    background-color:rgb(167, 4, 4);
+    background-color:rgb(10, 45, 69);
     border:none;
 }
 button:hover{
-    background-color: red;
+    background-color: rgb(4, 24, 37);
 }
 
 @media (max-width:450px){

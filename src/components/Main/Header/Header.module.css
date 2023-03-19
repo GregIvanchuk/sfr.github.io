@@ -126,7 +126,7 @@ header{
  .menu_l{
   display:flex;
   flex-direction: column-reverse;
-  gap:10px
+  gap:20px
 }
 .menu_l select{
   margin-left:10px
